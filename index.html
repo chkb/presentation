@@ -6,7 +6,7 @@
 	<meta name="viewport"
 	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>reveal.js</title>
+	<title>DNET - DevChapter</title>
 
 	<link rel="stylesheet"
 	      href="css/reveal.css">
@@ -34,26 +34,60 @@
 			         data-background-image="https://scm.dk/sites/default/files/styles/2400px/public/IMPapm_terminals_spain.jpg?itok=M6avXuBL"
 			         data-background-opacity="0.5">
 				<textarea data-template>
-					## Welcome to CFO team!
-			
-A short informal introduction to Cargo Flow optimization
+					## DNET
+					### DevChapter Week 44
 				</textarea>
 			</section>
 			<section data-markdown>
 				<textarea data-template>
-						## This is us!
-						| Chakib   | Andrea   | Tony    | Stefan    |
-						| :------: |:-------:|:--------:|:---------:|
-						| ![alt text][chakib] | ![alt text][chakib] | ![alt text][chakib] | ![alt text][chakib] |
-				
-
-						[chakib]: https://yt3.ggpht.com/a-/ACSszfH_cFtlP59pt6dzrNYOaZMi8x7O1eK-2IRfTw=s900-mo-c-c0xffffffff-rj-k-no "Chakib Benhaddou"
-
+						# Agenda
+						* Tour de DNET
+						* Upcomming Hack (Phillip)
+						* F*SCAR
 					</textarea>
 			</section>
 			<section>
-				<section>Vertical Slide 1</section>
-				<section>Vertical Slide 2</section>
+				<section data-markdown
+				         data-background-image="https://blog.nordnet.dk/wp-content/uploads/sites/4/2014/03/Maersk.jpg"
+				         data-background-opacity="0.5">
+					<textarea data-template>
+							# Tour de DNET
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+							# CFO Team
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+							# Cargo Team
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+							# RAPP Team
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+							# S&C Team
+					</textarea>
+				</section>
+			</section>
+			<section data-markdown
+			         data-background-image="https://cdn-images-1.medium.com/max/2000/1*P8ZAJLvJ7IahjN28FmQDhg.png"
+			         data-background-opacity="0.3">
+				<textarea data-template>
+						# Upcomming Hack (Phillip)
+				</textarea>
+			</section>
+			<section data-markdown
+			         data-background-image="https://boygeniusreport.files.wordpress.com/2016/02/brody-oscar-nominations-2015-1200.jpg?quality=98&strip=all"
+			         data-background-opacity="0.5">
+				<textarea data-template>
+						# F*SCAR
+				</textarea>
 			</section>
 		</div>
 	</div>
@@ -66,11 +100,23 @@ A short informal introduction to Cargo Flow optimization
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
-			dependencies: [
-				{ src: 'plugin/markdown/marked.js' },
-				{ src: 'plugin/markdown/markdown.js' },
-				{ src: 'plugin/notes/notes.js', async: true },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
 			]
 		});
 	</script>
