@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+	      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet"
+	      href="css/reveal.css">
+	<link rel="stylesheet"
+	      href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet"
+	      href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-markdown
+			         data-background-image="https://scm.dk/sites/default/files/styles/2400px/public/IMPapm_terminals_spain.jpg?itok=M6avXuBL"
+			         data-background-opacity="0.5">
+				<textarea data-template>
+					## Welcome to CFO team!
+			
+A short informal introduction to Cargo Flow optimization
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						## This is us!
+						| Chakib   | Andrea   | Tony    | Stefan    |
+						| :------: |:-------:|:--------:|:---------:|
+						| ![alt text][chakib] | ![alt text][chakib] | ![alt text][chakib] | ![alt text][chakib] |
+				
+
+						[chakib]: https://yt3.ggpht.com/a-/ACSszfH_cFtlP59pt6dzrNYOaZMi8x7O1eK-2IRfTw=s900-mo-c-c0xffffffff-rj-k-no "Chakib Benhaddou"
+
+					</textarea>
+			</section>
+			<section>
+				<section>Vertical Slide 1</section>
+				<section>Vertical Slide 2</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+</body>
+
+</html>
