@@ -30,21 +30,21 @@
 <body>
 	<div class="reveal">
 		<div class="slides">
-			<section data-markdown
+			<!-- <section data-markdown
 			         data-background-image="https://scm.dk/sites/default/files/styles/2400px/public/IMPapm_terminals_spain.jpg?itok=M6avXuBL"
 			         data-background-opacity="0.5">
 				<textarea data-template>
 					## CFO
 					### Cargo Flow Optimization
-					##### Team & Domain
+					##### Team & Process
 				</textarea>
 			</section>
 			<section data-markdown>
 				<textarea data-template>
 						# Agenda
 						* Team members and functions
-						* An overview of our landscape
-						* F*SCAR
+						* An overview of our tech landscape
+						* Process
 					</textarea>
 			</section>
 			<section data-markdown>
@@ -93,6 +93,17 @@
 				</section>
 				<section data-markdown>
 					<textarea data-template>
+						# Optimisation
+						|              |                         |
+						| ------------ |:-----------------------:|
+						| Language     | Python                  |
+						| Framework    | Flask + Marshmallow  + Ortools    |
+						| Database     | CosmosDB + Blob Storage |
+						| Unit testing | Pytest                  |
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
 						# DevOps
 						* Docker
 						* Kubernetes
@@ -102,26 +113,33 @@
 					</textarea>
 				</section>
 			</section>
+			<section>
+				<section data-markdown
+				         data-background-image="http://www.itechscope.gr/img/banner-image-process.jpg"
+				         data-background-opacity="0.1">
+					<textarea data-template>
+							# Process
+							* We run SCRUM
+							* Priority system
+							* 2 Refinement sessions
+							* 3 weeks sprints
+					</textarea>
+				</section>
+			</section> -->
 			<section data-markdown
-			         data-background-image="https://boygeniusreport.files.wordpress.com/2016/02/brody-oscar-nominations-2015-1200.jpg?quality=98&strip=all"
-			         data-background-opacity="0.5">
-				<textarea data-template>
-						# F*SCAR
-				</textarea>
-			</section>
-			<!-- <section data-markdown
 			         data-background-image="https://scm.dk/sites/default/files/styles/2400px/public/IMPapm_terminals_spain.jpg?itok=M6avXuBL"
 			         data-background-opacity="0.5">
 				<textarea data-template>
-					## DNET 2
-					### DevChapter Week 45
+					## DNET
+					### DevChapter Week 48
 				</textarea>
 			</section>
 			<section data-markdown>
 				<textarea data-template>
 						# Agenda
 						* Tour de DNET
-						* Upcomming Hack (Phillip)
+						* Why I hate E2E Tests - Andreas Markussen
+						* Upcomming hack - Philip Haugaard
 						* F*SCAR
 					</textarea>
 			</section>
@@ -131,6 +149,11 @@
 				         data-background-opacity="0.5">
 					<textarea data-template>
 							# Tour de DNET
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+							# S&C Team
 					</textarea>
 				</section>
 				<section data-markdown>
@@ -148,17 +171,21 @@
 							# RAPP Team
 					</textarea>
 				</section>
-				<section data-markdown>
-					<textarea data-template>
-							# S&C Team
-					</textarea>
-				</section>
+			</section>
+			<section data-markdown
+			         data-background-image="https://www.fluentin3months.com/wp-content/uploads/2013/07/frustration.jpg"
+			         data-background-opacity="0.5">
+				<textarea data-template>
+						# Why I hate E2E Tests
+						#### Andreas Markussen
+				</textarea>
 			</section>
 			<section data-markdown
 			         data-background-image="https://cdn-images-1.medium.com/max/2000/1*P8ZAJLvJ7IahjN28FmQDhg.png"
-			         data-background-opacity="0.3">
+			         data-background-opacity="0.5">
 				<textarea data-template>
-						# Upcomming Hack (Phillip)
+						# Upcomming Hack
+						#### Philip Haugaard
 				</textarea>
 			</section>
 			<section data-markdown
@@ -167,7 +194,7 @@
 				<textarea data-template>
 						# F*SCAR
 				</textarea>
-			</section> -->
+			</section>
 		</div>
 	</div>
 
@@ -180,22 +207,22 @@
 		// - https://github.com/hakimel/reveal.js#dependencies
 		Reveal.initialize({
 			dependencies: [{
-				src: 'plugin/markdown/marked.js'
-			},
-			{
-				src: 'plugin/markdown/markdown.js'
-			},
-			{
-				src: 'plugin/notes/notes.js',
-				async: true
-			},
-			{
-				src: 'plugin/highlight/highlight.js',
-				async: true,
-				callback: function () {
-					hljs.initHighlightingOnLoad();
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
 				}
-			}
 			]
 		});
 	</script>
