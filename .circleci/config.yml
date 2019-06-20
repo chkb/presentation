@@ -11,18 +11,6 @@ deploy-job:
     - run:
         name: Deploy Master to Firebase
         command: ./node_modules/.bin/firebase deploy --token=$FIREBASE_DEPLOY_TOKEN
-workflows:
-  version: 2
-
-  -deploy:
-    jobs:
-      - build-job
-      - deploy-job:
-          requires:
-            - build-job
-          filters:
-            branches:
-              only: master
 
 version: 2
 jobs:
@@ -40,7 +28,6 @@ jobs:
 
     steps:
       - checkout
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -49,7 +36,6 @@ jobs:
             - v1-dependencies-
 
       - run: yarn install
-
       - save_cache:
           paths:
             - node_modules
@@ -57,3 +43,12 @@ jobs:
 
       # run tests!
       - run: yarn test
+  deploy:
+    jobs:
+      - build-job:
+      - deploy-job:
+          requires:
+            - build-job
+          filters:
+            branches:
+              only: master
