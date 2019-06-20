@@ -43,12 +43,12 @@ jobs:
 
       # run tests!
       - run: yarn test
-  deploy:
-    jobs:
-      - build-job:
-      - deploy-job:
-          requires:
-            - build-job
-          filters:
-            branches:
-              only: master
+deploy:
+  jobs:
+    - build-job:
+    - deploy-job:
+        requires:
+          - build-job
+        filters:
+          branches:
+            only: master
